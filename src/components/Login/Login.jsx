@@ -1,3 +1,20 @@
+import styles from "./Login.module.css"
+import { Link } from "react-router-dom";
+
 export function Login() {
-  return (<h1>Hi Login</h1>);
+  return (
+    <div className="{styles.container}">
+      <div className="{styles.innerBox">
+        <h1 className="{styles.heading}">Login</h1>
+        <div className="{styles.footer}">
+          <b className="{styles.error}">error</b>
+          <button>Login Btn</button>
+          <p>Create Account</p>
+          <span>
+            <Link to="/signup"> Register</Link>
+          </span>
+        </div>
+      </div>
+    </div>
+  );
 }
