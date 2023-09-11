@@ -1,4 +1,4 @@
-import styles from "./Login.module.css"
+import styles from "./Login.module.css";
 import { Link } from "react-router-dom";
 
 export function Login() {
@@ -9,10 +9,12 @@ export function Login() {
         <div className="{styles.footer}">
           <b className="{styles.error}">error</b>
           <button>Login Btn</button>
-          <p>Create Account</p>
-          <span>
-            <Link to="/signup"> Register</Link>
-          </span>
+          <p>
+            Create Account
+            <span>
+              <Link to="/signup"> Go</Link>
+            </span>
+          </p>
         </div>
       </div>
     </div>
