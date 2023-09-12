@@ -1,9 +1,10 @@
 import styles from "../Login/Login.module.css";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { auth } from "../../firebase";
 
 function salir() {
-  return auth.signOut();
+  return auth.signOut()
+  // .then(() => navigate("/login"));
 }
 
 export function Home(props) {
