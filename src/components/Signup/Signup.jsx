@@ -1,4 +1,4 @@
-import styles from "./Signup.module.css";
+import styles from "../Login/Login.module.css";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../../firebase";

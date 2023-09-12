@@ -28,9 +28,9 @@ export function Login() {
       });
   };
   return (
-    <div className="{styles.container}">
-      <div className="{styles.innerBox}">
-        <h1 className="{styles.heading}">Login</h1>
+    <div className={styles.container}>
+      <div className={styles.innerBox}>
+        <h1 className={styles.heading}>Login</h1>
         <InputControl
           label="Email"
           onChange={(event) =>
@@ -45,8 +45,8 @@ export function Login() {
           }
           placeholder="Enter your password"
         />
-        <div className="{styles.footer}">
-          <b className="{styles.error}">{errorMsg}</b>
+        <div className={styles.footer}>
+          <b className={styles.error}>{errorMsg}</b>
           <button onClick={Iniciar} disabled={submitButtonDisabled}>Login Btn</button>
           <p>
             Create Account

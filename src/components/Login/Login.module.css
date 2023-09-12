@@ -1,0 +1,86 @@
+.container {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, #0073ff, #29275b8a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerBox{
+  min-width: 480px;
+  height: fit-content;
+  width: fit-content;
+  background: #fff;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+h1 *{
+  text-decoration: none;
+}
+
+.innerBoxHome{
+  min-width: 480px;
+  height: fit-content;
+  width: fit-content;
+  background: #a79999;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer .error {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: red;
+  text-align: center;
+}
+
+button{
+  outline: none;
+  border: none;
+  background-color: #4179bd;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 16px;
+  width: 100%;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.footer button:disabled{
+  background-color: gray !important;
+}
+
+.footer button:hover{
+  background-color: #20579a;
+}
+
+.footer p{
+  font-weight: 700;
+  color: black;
+}
+
+.footer p span a{
+  font-weight: bold;
+  color: rgb(60, 50, 205);
+  letter-spacing: 1px;
+  text-decoration: none;
+}

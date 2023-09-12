@@ -1,3 +1,5 @@
+import styles from "../Login/Login.module.css";
+
 import { Link } from "react-router-dom";
 import { auth } from "../../firebase";
 
@@ -7,9 +9,10 @@ function salir() {
 
 export function Home(props) {
   return (
-    <div>
+    <div className={styles.container}>
+    <div className={styles.innerBoxHome}>
       <div>
-        <h1>
+        <h1 >
           <Link to="/login">Login</Link>
         </h1>
         <br />
@@ -19,6 +22,8 @@ export function Home(props) {
       </div>
       <h2>{props.name ? `Welcome  ${props.name}` : "Start Session"}</h2>
       <button onClick={salir}>Exit</button>
+    </div>
+
     </div>
   );
 }
