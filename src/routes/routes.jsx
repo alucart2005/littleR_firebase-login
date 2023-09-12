@@ -18,9 +18,13 @@ export function MyRoutes() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<Home name={userName}/>}/>
+        <Route exact path="/" element={<Login />}/>
+        <Route exact path="/signup" element={<Signup/>}/>
         <Route exact path="/login" element={<Login />}/>
-        <Route exact path="/signup" element={<Signup />}/>
+        <Route exact path="/home" element={<Home name={userName}/>}/>
+        {/* <Route exact path="/" element={<Home name={userName}/>}/>
+        <Route exact path="/login" element={<Login />}/>
+        <Route exact path="/signup" element={<Signup />}/> */}
       </Routes>
     </Router>
   );

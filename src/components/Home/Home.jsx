@@ -1,5 +1,4 @@
 import styles from "../Login/Login.module.css";
-
 import { Link } from "react-router-dom";
 import { auth } from "../../firebase";
 
