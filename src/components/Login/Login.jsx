@@ -1,5 +1,5 @@
-import { InputControl } from "../InputControl/InputControl";
 import styles from "./Login.module.css";
+import { InputControl } from "../InputControl/InputControl";
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
@@ -28,9 +28,9 @@ export function Login() {
       });
   };
   return (
-    <div className="{styles.container}">
-      <div className="{styles.innerBox}">
-        <h1 className="{styles.heading}">Login</h1>
+    <div className={styles.container}>
+      <div className={styles.innerBox}>
+        <h1 className={styles.heading}>Login</h1>
         <InputControl
           label="Email"
           onChange={(event) =>
@@ -45,8 +45,8 @@ export function Login() {
           }
           placeholder="Enter your password"
         />
-        <div className="{styles.footer}">
-          <b className="{styles.error}">{errorMsg}</b>
+        <div className={styles.footer}>
+          <b className={styles.error}>{errorMsg}</b>
           <button onClick={Iniciar} disabled={submitButtonDisabled}>Login Btn</button>
           <p>
             Create Account
